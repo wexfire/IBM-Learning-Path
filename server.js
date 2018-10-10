@@ -38,7 +38,7 @@ app.get('/cognitive_call_center', routes.cognitive_call_center);
 
 
 /* W3ID app configurations */
-w3id.setAppURL("https://w3id.localtunnel.me");
+w3id.setAppURL("https://ibm-learning-path.mybluemix.net/");
 w3id.setAssertPage("auth.html");
 w3id.setAssertEndpoint("/assert");
 w3id.init(app);

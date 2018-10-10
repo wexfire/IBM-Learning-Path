@@ -1,6 +1,6 @@
 
 let CERT_PATH = './buildSrc/cert';
-let URL, AssertPage,AssertEndpoint;
+let URL, AssertPage, AssertEndpoint;
 let app = { get: () => { }, post: () => { } };
 let sp_options, sp, idp_options, idp;
 let saml2 = require('saml2-js'),
@@ -32,7 +32,7 @@ const init = (app) => {
 
     idp_options = {
         ///NameIdFormat=Email&PartnerId=*entityID-from-SP-metadata-file*
-        
+
         sso_login_url: `https://w3id.alpha.sso.ibm.com/auth/sps/samlidp/saml20/logininitial?RequestBinding=HTTPPost&PartnerId=${sp_options.entity_id}&NameIdFormat=Email&Target=${this.URL}`,
         certificates: fs.readFileSync(`${CERT_PATH}/w3id.sso.ibm.com`).toString()
     }
@@ -47,7 +47,7 @@ const login = (req, res) => {
             return res.send(500);
         res.redirect(login_url);
     });
-    // res.render('auth.html', {data: {firstName: "Rabah", lastName: "Zeineddine", blueGroups:[{name: "CloudWarrior/Admin"}]}})
+    // res.render('auth.html', { data: { firstName: "Rabah", lastName: "Zeineddine" } })
 }
 
 const assert = (req, res) => {

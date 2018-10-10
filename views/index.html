@@ -7,7 +7,9 @@
 <link rel="stylesheet" href="/style/index.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
-<script src="/scripts/index.js"></script> 
+
+<script src="/scripts/util.js"></script> 
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -24,7 +26,7 @@ onclick="w3_close()">
 
 <div class="w3-container w3-card w3-animate-top w3-cell-row" id="main">
   <button class="w3-hover-opacity w3-button w3-cell" id="openNav" onclick="w3_open()"><img src="/imgs/icons/side_bar_open.png"></button>
-  <button class="login w3-button w3-right w3-hover-light-gray">Login</button>
+  <div id="loginDiv"></div>
   <a href="/"><h1 class="w3-ibmplex w3-container w3-cell w3-display-middle w3-display-container">IBM <span style="color: #047CC0">Learning Path</span></h1></a>
   </div>
     <div id="setores">
@@ -44,5 +46,6 @@ onclick="w3_close()">
   <footer>
     <p>IBM Learning Path, 2018.</p>
   </footer>
+  <script src="/scripts/index.js"></script> 
 </body>
 </html>
