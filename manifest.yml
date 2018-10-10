@@ -1,0 +1,6 @@
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  name: ibm-learning-path
+  disk_quota: 256M
