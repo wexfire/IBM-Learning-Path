@@ -8,6 +8,8 @@
 		<script type="text/javascript" src="/scripts/foundation_skill_series.js"></script>	
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="UTF-8">
+		<script src="/scripts/util.js"></script>
+		<script src="/scripts/checkAuth.js"></script>
 	</head>
 	<body>
 	<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
@@ -78,7 +80,7 @@ onclick="w3_close()">
 				</p>
 				<img src="imgs/icons/school.svg" class="information level w3-display-position"><p class="leveldisc w3-display-position">Foundation</p> <!-- level -->
 				<img src="imgs/icons/schedule.svg" class="information duracao w3-display-position"><p class="w3-display-position duracaodisc">2 minutes</p> <!-- duracao -->
-				<img src="imgs/icons/check_circle_outline.svg" class="information certificado w3-display-position"> <!-- certificado -->
+				<img src="imgs/icons/check_circle.svg" class="information certificado w3-display-position"> <!-- certificado -->
 			</div>
 			</a>
 <h3 class="subtitulos">Infrastructure and Architecture Series:</h3>
@@ -121,13 +123,13 @@ onclick="w3_close()">
 				</p>
 				<img src="imgs/icons/school.svg" class="information level w3-display-position"><p class=" leveldisc w3-display-position">Foundation</p> <!-- level -->
 				<img src="imgs/icons/schedule.svg" class="information duracao w3-display-position"><p class="w3-display-position duracaodisc">3.5 hours</p> <!-- duracao -->
-				<img src="imgs/icons/check_circle_outline.svg" class="information certificado w3-display-position"> <!-- certificado -->
+				<img src="imgs/icons/check_circle.svg" class="information certificado w3-display-position"> <!-- certificado -->
 			</div>
 			</a>
 <h3 class="subtitulos">Installation and Configuration Series:</h3>
 			<a href="https://www.onlinedigitallearning.com/course/view.php?id=2855" target="_blank">
 			<div class="course_9 course w3-round w3-round-xlarge w3-display-container w3-card">
-				<h5 class=" titulo">Installation and configuration</h5>
+				<h3 class=" titulo">Installation and configuration</h3>
 				<p class="description  w3-round-large">In this course, you understand the requirements for installing IBM Cloud Private. Then, you learn how to install IBM Cloud Private in multiple types of environments.</p>
 				<img src="imgs/icons/school.svg" class="information level w3-display-position"><p class=" leveldisc w3-display-position">Foundation</p> <!-- level -->
 				<img src="imgs/icons/schedule.svg" class="information duracao w3-display-position"><p class="w3-display-position duracaodisc">3.5 hours</p> <!-- duracao -->
@@ -179,7 +181,7 @@ onclick="w3_close()">
 				</p>
 				<img src="imgs/icons/school.svg" class="information level w3-display-position"><p class=" leveldisc w3-display-position">Foundation</p> <!-- level -->
 				<img src="imgs/icons/schedule.svg" class="information duracao w3-display-position"><p class="w3-display-position duracaodisc">2 horas</p> <!-- duracao -->
-				<img src="imgs/icons/check_circle_outline.svg" class="information certificado w3-display-position"> <!-- certificado -->
+				<img src="imgs/icons/check_circle.svg" class="information certificado w3-display-position"> <!-- certificado -->
 			</div>
 			</a>
 <h3 class="subtitulos">Continuous Integration/Continuous Deployment Pipelines</h3>
@@ -207,9 +209,99 @@ onclick="w3_close()">
 				Blockchain</p>
 				<img src="imgs/icons/school.svg" class="information level w3-display-position"><p class=" leveldisc w3-display-position">Foundation</p> <!-- level -->
 				<img src="imgs/icons/schedule.svg" class="information duracao w3-display-position"><p class="w3-display-position duracaodisc">Self-paced</p> <!-- duracao -->
+				<img src="imgs/icons/check_circle.svg" class="information certificado w3-display-position"> <!-- certificado -->
+			</div>
+			</a>
+
+			<h3 class="subtitulos"></h3>
+				<a href="https://www.ibm.com/cloud/garage/videos/migrating-websphere-app-to-cloud" target="_blank">
+			<div class="course_16 course w3-round w3-round-xlarge w3-display-container w3-card">
+				<h5 class="titulo ">Migrating WebSphere to the  Cloud Guided Demo (CASE)</h5>
+				<p class="description  w3-round-large">Learn why and how to modernize existing enterprise Java applications and run them on IBM Cloud Private. </p>
+				<img src="imgs/icons/school.svg" class="information level w3-display-position"><p class=" leveldisc w3-display-position">Foundation</p> <!-- level -->
+				<img src="imgs/icons/schedule.svg" class="information duracao w3-display-position"><p class=" duracaodisc w3-display-position">Self paced</p> <!-- duracao -->
 				<img src="imgs/icons/check_circle_outline.svg" class="information certificado w3-display-position"> <!-- certificado -->
 			</div>
 			</a>
+
+
+			<a href="https://www.ibm.com/cloud/garage/architectures/infrastructure/reference-architecture" target="_blank">
+			<div class="course_17 course w3-round w3-round-xlarge w3-display-container w3-card">
+				<h3 class="titulo ">Infrastructure</h3>
+				<p class="description  w3-round-large">Explore an architecture that provides flexible infrastructure solutions, including on-premises, cloud-based (off-premises), and hybrid infrastructures that combine the two. 
+				</p>
+				<img src="imgs/icons/school.svg" class="information level w3-display-position"><p class=" leveldisc w3-display-position">Foundation</p> <!-- level -->
+				<img src="imgs/icons/schedule.svg" class="information duracao w3-display-position"><p class=" duracaodisc w3-display-position">Self paced</p> <!-- duracao -->
+				<img src="imgs/icons/check_circle_outline.svg" class="information certificado w3-display-position"> <!-- certificado -->
+			</div>
+			</a>
+
+			<a href="https://www.ibm.com/cloud/garage/architectures/private-cloud/reference-architecture" target="_blank">
+			<div class="course_18 course w3-round w3-round-xlarge w3-display-container w3-card">
+				<h5 class="titulo ">Private Cloud Reference Architecture Tutorials (CASE)</h5>
+				<p class="description  w3-round-large">Private cloud for maximum control with the benefits of cloud.</p>
+				<img src="imgs/icons/school.svg" class="information level w3-display-position"><p class=" leveldisc w3-display-position">Foundation</p> <!-- level -->
+				<img src="imgs/icons/schedule.svg" class="information duracao w3-display-position"><p class=" duracaodisc w3-display-position">Self paced</p> <!-- duracao -->
+				<img src="imgs/icons/check_circle_outline.svg" class="information certificado w3-display-position"> <!-- certificado -->
+			</div>
+			</a>
+
+
+			<a href="https://ec.w3bmix.ibm.com/session.html?id=AEDDE2DF9C1B219F8525825F00773247" target="_blank">
+			<div class="course_19 course w3-round w3-round-xlarge w3-display-container w3-card">
+				<h6 class="titulo ">IBM Cloud Private Platform Security Overview</h6>
+				<p class="description  w3-round-large">This webcast will cover the most important security concepts for the IBM Cloud Private Platform.</p>
+				<img src="imgs/icons/school.svg" class="information level w3-display-position"><p class=" leveldisc w3-display-position">Foundation</p> <!-- level -->
+				<img src="imgs/icons/schedule.svg" class="information duracao w3-display-position"><p class=" duracaodisc w3-display-position">Self paced</p> <!-- duracao -->
+				<img src="imgs/icons/check_circle_outline.svg" class="information certificado w3-display-position"> <!-- certificado -->
+			</div>
+			</a>
+
+
+
+			<a href="https://www.ibm.com/cloud/garage/videos/migrating-websphere-app-to-cloud" target="_blank">
+			<div class="course_20 course w3-round w3-round-xlarge w3-display-container w3-card">
+				<h5 class="titulo ">Review Architecture Center</h5>
+				<p class="description  w3-round-large">Learn why and how to modernize existing enterprise Java applications and run them on IBM Cloud Private. </p>
+				<img src="imgs/icons/school.svg" class="information level w3-display-position"><p class=" leveldisc w3-display-position">Foundation</p> <!-- level -->
+				<img src="imgs/icons/schedule.svg" class="information duracao w3-display-position"><p class=" duracaodisc w3-display-position">Self paced</p> <!-- duracao -->
+				<img src="imgs/icons/check_circle_outline.svg" class="information certificado w3-display-position"> <!-- certificado -->
+			</div>
+			</a>
+
+
+			<a href="https://www.ibm.com/cloud/garage/tutorials/cloudnative-microservices-cloud-private" target="_blank">
+			<div class="course_21 course w3-round w3-round-xlarge w3-display-container w3-card">
+				<h6 class="titulo ">Deploy a cloud-native microservices application on IBM Cloud Private (DTE)</h6>
+				<p class="description  w3-round-large">Install and run a cloud-native microservices app on an IBM Cloud Private platform on Kubernetes.</p>
+				<img src="imgs/icons/school.svg" class="information level w3-display-position"><p class=" leveldisc w3-display-position">Advanced</p> <!-- level -->
+				<img src="imgs/icons/schedule.svg" class="information duracao w3-display-position"><p class=" duracaodisc w3-display-position">Self paced</p> <!-- duracao -->
+				<img src="imgs/icons/check_circle_outline.svg" class="information certificado w3-display-position"> <!-- certificado -->
+			</div>
+			</a>
+
+
+			<a href="https://www.ibm.com/cloud/garage/tutorials/cloud-private-jenkins-pipeline" target="_blank">
+			<div class="course_22 course w3-round w3-round-xlarge w3-display-container w3-card">
+				<h4 class="titulo ">Set up a Jenkins pipeline</h4>
+				<p class="description  w3-round-large">Set up a Jenkins pipeline to continuously integrate and deliver Kubernetes deployments to an IBM Cloud Private cluster. </p>
+				<img src="imgs/icons/school.svg" class="information level w3-display-position"><p class=" leveldisc w3-display-position">Advanced</p> <!-- level -->
+				<img src="imgs/icons/schedule.svg" class="information duracao w3-display-position"><p class=" duracaodisc w3-display-position">Self paced</p> <!-- duracao -->
+				<img src="imgs/icons/check_circle_outline.svg" class="information certificado w3-display-position"> <!-- certificado -->
+			</div>
+			</a>
+
+
+			<a href="http://cam-content-playbook.rch.stglabs.ibm.com/home/learning-resources/" target="_blank">
+			<div class="course_23 course w3-round w3-round-xlarge w3-display-container w3-card">
+				<h6 class="titulo ">Cloud Automation Manager Playbook: Tutorials & Videos</h6>
+				<p class="description  w3-round-large">IBM Cloud Automation Manager Content Provider Playbook</p>
+				<img src="imgs/icons/school.svg" class="information level w3-display-position"><p class=" leveldisc w3-display-position">Advanced</p> <!-- level -->
+				<img src="imgs/icons/schedule.svg" class="information duracao w3-display-position"><p class=" duracaodisc w3-display-position">Self paced</p> <!-- duracao -->
+				<img src="imgs/icons/check_circle_outline.svg" class="information certificado w3-display-position"> <!-- certificado -->
+			</div>
+			</a>
+			
 			</div>
 			</a>
 

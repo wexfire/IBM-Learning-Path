@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>API Connect</title>
+		<link rel="stylesheet" type="text/css" href="/style/w3.css">
+		<link rel="stylesheet" type="text/css" href="/style/api_connect.css">
+		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="api_connect.js"></script>	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<script src="/scripts/util.js"></script>
+		<script src="/scripts/checkAuth.js"></script>
+	</head>
+	<body>
+	<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-hover-opacity w3-bar-item w3-button w3-cell-row "
+onclick="w3_close()">
+<img src="imgs/icons/side_bar_close.png" class="mySidebarextra w3-cell w3-right" id="close-sidebar">
+	</button>
+  <a href="/ofertas_mp" class="mySidebarextra w3-ibmplex w3-bar-item w3-button w3-padding-32 w3-hover-light-gray">Menagement &amp; Plataform</a>
+  <a href="/ofertas_indev" class="mySidebarextra w3-ibmplex w3-bar-item w3-button w3-padding-32 w3-hover-light-gray">Integration &amp; Development</a>
+  <a href="/ofertas_dba" class="mySidebarextra w3-ibmplex w3-bar-item w3-button w3-padding-32 w3-hover-light-gray">Digital Business Automation</a>
+</div>
+
+	<div class="w3-container w3-card w3-animate-top w3-cell-row" id="main">
+	<button class="w3-hover-opacity w3-button w3-cell" id="openNav" onclick="w3_open()"><img src="imgs/icons/side_bar_open.png"></button>
+	<button class="login w3-button w3-right w3-hover-light-gray">Login</button>
+	<a href="/"><h1 class="w3-ibmplex w3-container w3-cell w3-display-middle w3-display-container">IBM <span style="color: #047CC0">Learning Path</span></h1></a>
+	</div>
+			<h1 class="w3-animate-left">API Connnect</h1>		
+			<a href=" https://console.bluemix.net/apis/overview " target="_blank">
+			<div class="course_0 course w3-round w3-round-xlarge w3-display-container w3-card">
+				<h6 class="titulo"> IBM API Connect - Create, Secure, and Manage APIs across clouds 
+				</h6>
+				<p class="description w3-round-large">Create custom APIs, apply security & subscription plans, and manage API lifecycles.</p>
+				<img src="imgs/icons/school.svg" class="information level w3-display-position"><p class=" leveldisc w3-display-position">Foundation</p> <!-- level -->
+				<img src="imgs/icons/schedule.svg" class="information duracao w3-display-position"><p class="w3-display-position duracaodisc">60 minutes</p><!-- duracao -->
+				<img src="imgs/icons/check_circle_outline.svg" class="information certificado w3-display-position"> <!-- certificado -->
+			</div></a>
+			
+			<a href="https://console.bluemix.net/docs/services/apiconnect/index.html#index"  		target="_blank">
+			<div class="course_1 course w3-round w3-round-xlarge w3-display-container w3-card">
+				<h6 class=" titulo ">Getting started with the IBM Cloud API Connect service</h6>
+				<p class="description  w3-round-large"> Use the IBM API Connect for IBM Cloud service to quickly create APIs and microservices based on Node.js and Java runtimes. You can also manage your APIs by setting varying levels of security, visibility, billing information, and rate limits while sharing APIs with application developers. The API Connect service also lets you transform and grow your business with insights through detailed analytics with structured filtered searches.</p>
+				<img src="imgs/icons/school.svg" class="information level w3-display-position"><p class=" leveldisc w3-display-position">Foundation</p> <!-- level -->
+				<img src="imgs/icons/schedule.svg" class="information duracao w3-display-position"><p class="w3-display-position duracaodisc">8 hours</p><!-- duracao -->
+				<img src="imgs/icons/check_circle_outline.svg" class="information certificado w3-display-position"> <!-- certificado -->
+			</a>
+			</div>
+			
+			
+		</div>
+	</body>
+</html>

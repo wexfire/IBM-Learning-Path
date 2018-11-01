@@ -32,8 +32,13 @@ app.get('/icp_cursos', routes.icp_cursos);
 app.get('/foundation_skill_series', routes.foundation_skill_series);
 app.get('/cursos_icp_4_app', routes.cursos_icp_4_app);
 app.get('/cognitive_call_center', routes.cognitive_call_center);
-
-
+app.get('/dba_digital_worker', routes.dba_digital_worker);
+app.get('/api_connect', routes.api_connect);
+app.get('/aspera', routes.aspera);
+app.get('/flex_devops', routes.flex_devops);
+app.get('/ibm_app_connect', routes.ibm_app_connect);
+app.get('/digitalize_negocios_na_cloud', routes.digitalize_negocios_na_cloud);
+app.get('/digital_labor', routes.digital_labor);
 
 
 

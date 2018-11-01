@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>IBM APP Connect</title>
+		
+		<link rel="stylesheet" type="text/css" href="/style/ibm_app_connect.css">
+		<link rel="stylesheet" type="text/css" href="/style/w3.css">
+		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+		<script type="text/javascript" src="ibm_app_connect.js"></script>	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<script src="/scripts/util.js"></script>
+		<script src="/scripts/checkAuth.js"></script>
+	</head>
+	<body>
+			<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+					<button class="w3-hover-opacity w3-bar-item w3-button w3-cell-row "
+				  onclick="w3_close()">
+					  <img src="/imgs/icons/side_bar_close.png" class="mySidebarextra w3-cell w3-right" id="close-sidebar">
+					  </button>
+					<a href="/ofertas_mp" class="mySidebarextra w3-ibmplex w3-bar-item w3-button w3-padding-32 w3-hover-light-gray">Menagement &amp; Plataform</a>
+					<a href="/ofertas_indev" class="mySidebarextra w3-ibmplex w3-bar-item w3-button w3-padding-32 w3-hover-light-gray">Integration &amp; Development</a>
+					<a href="/ofertas_dba" class="mySidebarextra w3-ibmplex w3-bar-item w3-button w3-padding-32 w3-hover-light-gray">Digital Business Automation</a>
+				  </div>
+
+				  <div class="w3-container w3-card w3-animate-top w3-cell-row" id="main">
+						<button class="w3-hover-opacity w3-button w3-cell" id="openNav" onclick="w3_open()"><img src="imgs/icons/side_bar_open.png"></button>
+						<button class="login w3-button w3-right w3-hover-light-gray">Login</button>
+						<a href="/"><h1 class="w3-ibmplex w3-container w3-cell w3-display-middle w3-display-container">IBM <span style="color: #047CC0">Learning Path</span></h1></a>
+						</div>
+			<h1 style="position: sticky;">IBM APP Connect</h1>		
+			<a href="https://developer.ibm.com/integration/docs/ibm-integration-bus/get-started/" target="_blank">
+				<div class="course_1 course w3-round w3-round-xlarge w3-display-container w3-card">
+					<h6 class=" titulo ">Get started with IBM Integration Bus for Developers</h6>
+					<p class="description  w3-round-large"> Get started provides information and resources to help you achieve a meaningful first-time experience with IBM Integration Bus in a straightforward way.</p> 
+					<img src="imgs/icons/schedule.svg" class="information duracao w3-display-position"><p class="w3-display-position duracaodisc">8 hours</p> <!-- duracao -->
+					<img src="imgs/icons/check_circle_outline.svg" class="information certificado w3-display-position"><!-- certificado -->
+				</div>
+			</a>
+			
+			<a href="https://developer.ibm.com/integration/docs/ibm-integration-bus/self-study-labs/" target="_blank">
+				<div class="course_1 course w3-round w3-round-xlarge w3-display-container w3-card">
+					<h6 class=" titulo ">Try out the self-study guides and develop your skills in IBM Integration Bus.</h6>
+					<p class="description  w3-round-large"> Each lab comprises one or more guides as PDF files, and is usually accompanied by an archive file (.zip file) that you can use to complete the lab activities. Some scenarios also require additional software products such as IBM DB2, IBM ODM, and WebSphere Application Server.</p>
+					<img src="imgs/icons/schedule.svg" class="information duracao w3-display-position"><p class="w3-display-position duracaodisc">16 hours</p> <!-- duracao -->
+					<img src="imgs/icons/check_circle_outline.svg" class="information certificado w3-display-position"><!-- certificado -->
+				</div>
+			</a>
+			
+		<a href="https://developer.ibm.com/integration/docs/ibm-integration-bus/self-study-labs/" target="_blank">
+			<div class="course_1 course w3-round w3-round-xlarge w3-display-container w3-card">
+				<h4 class=" titulo ">Videos for IBM Integration Bus V10</h4>
+				<p class="description  w3-round-large"> Use these videos to improve your skills adopting IBM Integration Bus.</p>
+				<img src="imgs/icons/schedule.svg" class="information duracao w3-display-position"><p class="w3-display-position duracaodisc">2 hours</p> <!-- duracao -->
+				<img src="imgs/icons/check_circle_outline.svg" class="information certificado w3-display-position"><!-- certificado -->
+			</div>
+		</a>
+	</body>
+</html>
