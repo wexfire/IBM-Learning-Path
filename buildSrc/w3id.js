@@ -31,7 +31,7 @@ const init = (app) => {
     sp = new saml2.ServiceProvider(sp_options);
 
     idp_options = {
-        sso_login_url: `https://w3id.alpha.sso.ibm.com/auth/sps/samlidp2/saml20/logininitial?RequestBinding=HTTPPost&PartnerId=${this.URL}&NameIdFormat=email&Target=`,
+        sso_login_url: `https://w3id.alpha.sso.ibm.com/auth/sps/samlidp2/saml20/logininitial?RequestBinding=HTTPPost&PartnerId=${this.URL}/&NameIdFormat=email&Target=`,
         certificates: fs.readFileSync(`${CERT_PATH}/w3id.sso.ibm.com`).toString()
     }
 
