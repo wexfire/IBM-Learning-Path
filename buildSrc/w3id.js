@@ -22,7 +22,7 @@ const setAssertEndpoint = (path) => {
 const init = (app) => {
     this.app = app;
     sp_options = {
-        entity_id: `${this.URL}/metadata.xml`,
+        entity_id: `${this.URL}`,
         private_key: fs.readFileSync(`${CERT_PATH}/key.pem`).toString(),
         certificate: fs.readFileSync(`${CERT_PATH}/cert.pem`).toString(),
         assert_endpoint: `${this.URL + this.AssertEndpoint}`
@@ -31,9 +31,7 @@ const init = (app) => {
     sp = new saml2.ServiceProvider(sp_options);
 
     idp_options = {
-        ///NameIdFormat=Email&PartnerId=*entityID-from-SP-metadata-file*
-
-        sso_login_url: `https://w3id.alpha.sso.ibm.com/auth/sps/samlidp/saml20/logininitial?RequestBinding=HTTPPost&PartnerId=${sp_options.entity_id}&NameIdFormat=Email&Target=${this.URL}`,
+        sso_login_url: `https://w3id.alpha.sso.ibm.com/auth/sps/samlidp2/saml20/logininitial?RequestBinding=HTTPPost&PartnerId=${this.URL}&NameIdFormat=email&Target=`,
         certificates: fs.readFileSync(`${CERT_PATH}/w3id.sso.ibm.com`).toString()
     }
 
