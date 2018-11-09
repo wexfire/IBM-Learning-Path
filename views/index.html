@@ -27,6 +27,20 @@ onclick="w3_close()">
 <div class="w3-container w3-card w3-animate-top w3-cell-row" id="main">
   <button class="w3-hover-opacity w3-button w3-cell" id="openNav" onclick="w3_open()"><img src="/imgs/icons/side_bar_open.png"></button>
   <div id="loginDiv"></div>
+  <div id="modal" class="w3-modal">
+    <div class="w3-modal-content">
+    <header class="w3-container w3-teal"> 
+    <span onclick="document.getElementById('modal').style.display='none'" 
+    class="w3-button w3-display-topright">&times;</span>
+    <h2>Modal Header</h2>
+  </header>
+  <div class="w3-container">
+    <p>Some text..</p>
+    <p>Some text..</p>
+  </div>
+  <footer class="w3-container w3-teal">
+    <p>Modal Footer</p>
+  </footer></div></div>
   <a href="/"><h1 class="w3-ibmplex w3-container w3-cell w3-display-middle w3-display-container">IBM <span style="color: #047CC0">Learning Path</span></h1></a>
   </div>
     <div id="setores">
